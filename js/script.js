@@ -44,8 +44,3 @@ function blogNews(news) {
 }
 
 blogNews(newsArray);
-
-
-
-
-

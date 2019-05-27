@@ -511,8 +511,7 @@ body {
 
     .social-buttons {
         list-style: none;
-        margin: auto 0;
-        padding: 30px 5px 50px;
+        padding: 50px 5px 50px;
         text-align: center;
 
         .social-btn {
@@ -699,5 +698,9 @@ footer {
         }
     }
 
+
+}
+
+@media (min-width: 960px) {
 
 }
