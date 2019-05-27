@@ -149,11 +149,6 @@ body {
   position: relative;
   z-index: -2;
   background-image: url(/img/carousel/img-bg1.png); }
-  .slider-container .wrapper {
-    position: relative; }
-    .slider-container .wrapper .bg {
-      z-index: -1;
-      position: absolute; }
   .slider-container .shoe-collection {
     padding: 20px 0; }
   .slider-container .price {
