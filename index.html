@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="main-header">
+            <div class="wrapper">
+                <h1 class="name"><a href="#">FOOSHOES</a></h1>
+                <!-- <div class="search-box-black">
+                    <input type="text" name="" class="search-txt" placeholder="Type to search" />
+                    <a class="search-btn" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56.97 56.97" width="15px" height="auto"
+                            fill="#7e7e7e">
+                            <path
+                                d="M55.15 51.89l-13.56-14.1A22.93 22.93 0 0 0 46.99 23c0-12.68-10.32-23-23-23s-23 10.32-23 23 10.31 23 23 23c4.76 0 9.3-1.44 13.17-4.16l13.66 14.2a2.98 2.98 0 0 0 4.24.09 3 3 0 0 0 .09-4.24zM23.98 6c9.38 0 17 7.63 17 17s-7.62 17-17 17-17-7.63-17-17 7.63-17 17-17z" />
+                        </svg>
+                    </a>
+
+                </div> -->
+                <p class="login">LOGIN or REGISTER</p>
+            </div>
+        </div>
+        <div class="second-header">
+            <div class="wrapper">
+                <div class="menu">
+                    <a href="javascript:void(0);" class="menu-btn"  onclick="myFunction()">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="15px" height="auto"
+                            fill="#7e7e7e">
+                            <path
+                                d="M491.32 235.32H20.68a20.68 20.68 0 1 0 0 41.36h470.64a20.68 20.68 0 1 0 0-41.36zM491.32 78.44H20.68a20.68 20.68 0 0 0 0 41.36h470.64a20.68 20.68 0 1 0 0-41.36zM491.32 392.2H20.68a20.68 20.68 0 1 0 0 41.36h470.64a20.68 20.68 0 1 0 0-41.36z" />
+                        </svg>
+                    </a>
+                    <ul class="top-nav" id="myTopnav">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Products</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Pages</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="search-box" id="white">
+
+                    <input type="text" name="" class="search-txt" placeholder="Type to search" />
+                    <a class="search-btn" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56.97 56.97" width="15px" height="auto"
+                            fill="#7e7e7e">
+                            <path
+                                d="M55.15 51.89l-13.56-14.1A22.93 22.93 0 0 0 46.99 23c0-12.68-10.32-23-23-23s-23 10.32-23 23 10.31 23 23 23c4.76 0 9.3-1.44 13.17-4.16l13.66 14.2a2.98 2.98 0 0 0 4.24.09 3 3 0 0 0 .09-4.24zM23.98 6c9.38 0 17 7.63 17 17s-7.62 17-17 17-17-7.63-17-17 7.63-17 17-17z" />
+                        </svg>
+                    </a>
+
+                </div>
+                <div class="favorites">
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 490.73 490.73" width="15px" height="auto"
+                            fill="#7e7e7e">
+                            <path
+                                d="M453.44 160.21l-119.7-8.6c-2.5-.2-4.7-1.7-5.6-4.1l-45.6-111c-6.3-15.3-20.5-24.8-37.1-24.8s-30.7 9.5-37.1 24.9l-45.7 111.1a6.7 6.7 0 0 1-5.6 4.1l-119.5 8.6c-16.2.9-30 11.5-35.3 27.1-5.4 15.8-.9 32.4 11.9 43.3l92.5 76.4c1.9 1.6 2.8 4.2 2.2 6.6l-28.2 115.4c-3.3 12-1 24.4 6.3 34.1 7.5 9.8 19.2 15.7 31.5 15.7a38 38 0 0 0 21.1-6.4l101.1-62.9a6.6 6.6 0 0 1 6.9 0l102.1 62.7c6.4 4.3 13.8 6.6 21.3 6.6 11.5 0 22.9-5.5 30.3-14.8 7.7-9.6 10.5-22.1 7.7-34.6l-28.3-115.7c-.6-2.5.3-5.1 2.2-6.7l93.9-76.6c12.6-10.8 17.1-27.4 11.8-43.2-5.2-15.6-19.1-26.3-35.1-27.2zm7.7 51.5l-93.7 76.5a31.16 31.16 0 0 0-10.5 31.5l28.3 115.5c1.5 6.8-1.2 11.5-3 13.7-2.8 3.5-7 5.7-11.2 5.7-2.6 0-5.2-.8-8-2.7l-102.5-63a31.12 31.12 0 0 0-32.7.1l-101.5 63.1c-6.5 4.3-15.2 2.4-19.8-3.6-1.9-2.5-3.9-6.8-2.1-13.1l28.3-115.8c2.8-11.5-1.3-23.8-10.4-31.3l-92.3-76.3c-7.3-6.3-5.3-14.4-4.5-16.7s4.1-10 13.7-10.5l119.7-8.6c11.8-.9 22-8.2 26.5-19.2l45.7-111.1c3.7-9 12-9.7 14.4-9.7 2.4 0 10.7.7 14.4 9.7l45.7 111.1c4.5 11 14.7 18.3 26.5 19.2l119.9 8.7c9.4.5 12.7 8.2 13.5 10.5.6 2.1 2.6 10.2-4.4 16.3z" />
+                        </svg>
+                        <span class="count">30</span>
+                    </a>
+                </div>
+                <div class="cart">
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 459.53 459.53" width="15px" height="auto"
+                            fill="#7e7e7e">
+                            <path
+                                d="M17 55.23h48.73l69.42 251.03a17 17 0 0 0 16.43 12.47h213.35c6.8 0 12.75-3.97 15.59-10.2l77.63-178.5a17.2 17.2 0 0 0-1.42-16.15 16.88 16.88 0 0 0-14.16-7.65H206.83c-9.35 0-17 7.65-17 17s7.65 17 17 17H416.5l-62.9 144.5H164.33L94.92 33.7a17 17 0 0 0-16.44-12.47H17c-9.35 0-17 7.65-17 17s7.65 17 17 17zM135.43 438.3c21.25 0 38.54-17.29 38.54-38.54s-17.29-38.53-38.54-38.53-38.53 17.28-38.53 38.53 17.28 38.54 38.53 38.54zm240.84 0h2.83a38.46 38.46 0 0 0 26.35-13.32c6.8-7.65 9.92-17.57 9.35-28.05-1.42-20.97-19.83-37.12-41.08-35.7-21.25 1.42-37.12 20.12-35.7 41.08 1.41 20.12 18.13 35.99 38.25 35.99z" />
+                        </svg>
+                        <span class="count">0</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <main>
+        <div class="slider-container">
+            <div class="wrapper">
+                <div class="bg">
+                </div>
+                <div class="shoe-collection">
+                    <div class="price">
+                        $145.99
+                    </div>
+                    <h2 class="name-collection">
+                        Pink Shoes 2013 Collection
+                    </h2>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo consectetur aliquam sint
+                        earum alias!
+                    </p>
+                    <ul class="icons">
+                        <li class="sl-icon">
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="10">
+                                    <path data-name="Eye Icon"
+                                        d="M15.98 4.89v-.06a.24.24 0 0 0-.02-.03l-.01-.03a9 9 0 0 0-15.9 0 .26.26 0 0 0-.01.03l-.02.03a.45.45 0 0 0 0 .06A.48.48 0 0 0 0 5a.48.48 0 0 0 .02.11.47.47 0 0 0 0 .07s.02 0 .02.02a.26.26 0 0 0 .01.03 9 9 0 0 0 15.9 0 .33.33 0 0 0 .01-.03.15.15 0 0 0 .01-.02c.01-.02 0-.05.02-.07a.38.38 0 0 0 0-.22zM8 9a8.26 8.26 0 0 1-7-4 8.12 8.12 0 0 1 14 0 8.26 8.26 0 0 1-7 4zm0-6a2 2 0 0 0-2 2 .25.25 0 1 0 .5 0A1.5 1.5 0 0 1 8 3.5.25.25 0 0 0 8 3zm-.01-1.5a3.5 3.5 0 1 0 3.5 3.5 3.5 3.5 0 0 0-3.5-3.5zm0 6.51a3 3 0 1 1 3-3 3 3 0 0 1-3 3z"
+                                        fill="#6e6e6e" fill-rule="evenodd" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="sl-icon">
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 490.73 490.73" width="15px"
+                                    fill="#7e7e7e">
+                                    <path
+                                        d="M453.44 160.21l-119.7-8.6c-2.5-.2-4.7-1.7-5.6-4.1l-45.6-111c-6.3-15.3-20.5-24.8-37.1-24.8s-30.7 9.5-37.1 24.9l-45.7 111.1a6.7 6.7 0 0 1-5.6 4.1l-119.5 8.6c-16.2.9-30 11.5-35.3 27.1-5.4 15.8-.9 32.4 11.9 43.3l92.5 76.4c1.9 1.6 2.8 4.2 2.2 6.6l-28.2 115.4c-3.3 12-1 24.4 6.3 34.1 7.5 9.8 19.2 15.7 31.5 15.7a38 38 0 0 0 21.1-6.4l101.1-62.9a6.6 6.6 0 0 1 6.9 0l102.1 62.7c6.4 4.3 13.8 6.6 21.3 6.6 11.5 0 22.9-5.5 30.3-14.8 7.7-9.6 10.5-22.1 7.7-34.6l-28.3-115.7c-.6-2.5.3-5.1 2.2-6.7l93.9-76.6c12.6-10.8 17.1-27.4 11.8-43.2-5.2-15.6-19.1-26.3-35.1-27.2zm7.7 51.5l-93.7 76.5a31.16 31.16 0 0 0-10.5 31.5l28.3 115.5c1.5 6.8-1.2 11.5-3 13.7-2.8 3.5-7 5.7-11.2 5.7-2.6 0-5.2-.8-8-2.7l-102.5-63a31.12 31.12 0 0 0-32.7.1l-101.5 63.1c-6.5 4.3-15.2 2.4-19.8-3.6-1.9-2.5-3.9-6.8-2.1-13.1l28.3-115.8c2.8-11.5-1.3-23.8-10.4-31.3l-92.3-76.3c-7.3-6.3-5.3-14.4-4.5-16.7s4.1-10 13.7-10.5l119.7-8.6c11.8-.9 22-8.2 26.5-19.2l45.7-111.1c3.7-9 12-9.7 14.4-9.7 2.4 0 10.7.7 14.4 9.7l45.7 111.1c4.5 11 14.7 18.3 26.5 19.2l119.9 8.7c9.4.5 12.7 8.2 13.5 10.5.6 2.1 2.6 10.2-4.4 16.3z" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="sl-icon">
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="13">
+                                    <path data-name="Share Icon"
+                                        d="M3.97 8s1.54-2.44 6.99-2.44V8L16 4.02 10.96 0v2.34c-.13 0-6.99.3-6.99 5.66zM13 9c-.02 0 0 .45 0 1h-.01v2h-12V2H5c.55 0 1 .02 1 0a1 1 0 0 0-1-1H1.99a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h10a2 2 0 0 0 2-1.9L14 11v-1a1 1 0 0 0-1-1z"
+                                        fill="#6e6e6e" fill-rule="evenodd" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="sl-icon">
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15.03">
+                                    <path data-name="Cart Icon"
+                                        d="M7.5 12.2a1.4 1.4 0 1 1-1.4 1.4 1.4 1.4 0 0 1 1.4-1.4zm5-.04a1.43 1.43 0 1 1-1.42 1.43 1.43 1.43 0 0 1 1.42-1.43zm2.8-9.07a1 1 0 0 0-1.25.66s-1 2.5-1.5 4.3a1.31 1.31 0 0 1-1.48 1.02H8.95a1.47 1.47 0 0 1-1.48-1.03C6.55 6.24 5.03 3 5.03 3a1.63 1.63 0 0 0-1.36-.96H1a1 1 0 0 0 0 2.01h2.25l2.8 5.55a2.34 2.34 0 0 0 2.08 1.48h3.84a1.95 1.95 0 0 0 2.18-1.48l1.8-5.25a1 1 0 0 0-.65-1.26zM9 3.05V1.02a1 1 0 1 1 2 0v2.03h2.54L10 6.6 6.47 3.05H9z"
+                                        fill="#57c5a0" fill-rule="evenodd" />
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="slider-scroll">
+            <div class="wrapper">
+                <div class="scroll">
+                    <h3>Pink Shoes</h3>
+                    <p>Now at $145.99</p>
+                </div>
+                <div class="scroll">
+                    <h3>Anna Field</h3>
+                    <p>Limited Edition</p>
+                </div>
+                <div class="scroll">
+                    <h3>Prada</h3>
+                    <p>Summer is coming</p>
+                </div>
+            </div>
+        </div> -->
+
+        <!-- //Specials -->
+
+
+        <section class="specials">
+            <div class="wrapper">
+                <div class="specials-all">
+                    <div class="spec spec1">
+                        <a href="#">
+                            <p class="text">
+                                ON SALE
+                            </p>
+                        </a>
+                    </div>
+                    <div class="spec spec2">
+                        <a href="#">
+                            <p class="text">
+                                SPECIAL OFFERS
+                            </p>
+                        </a>
+                    </div>
+                    <div class="spec spec3">
+                        <a href="#">
+                            <p class="text">
+                                MUST HAVE
+                            </p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="new-arrivals box">
+            <div class="wrapper">
+                <div class="group-name">
+                    <h3 class="name">
+                        New arrivals on Foose Shoes
+                    </h3>
+                    <a class="btn show-all" href="#">Show All</a>
+                </div>
+                <div class="items">
+                    <div class="item">
+                        <img src="/img/new-arrivals/shoe.png" alt="">
+                        <p class="description">
+                            Even&Odd
+                        </p>
+                        <p class="price">
+                            $145.99
+                        </p>
+                    </div>
+                    <div class="item">
+                        <img src="/img/new-arrivals/shoe.png" alt="">
+                        <p class="description">
+                            Even&Odd
+                        </p>
+                        <p class="price">
+                            $145.99
+                        </p>
+                    </div>
+                    <div class="item">
+                        <img src="/img/new-arrivals/shoe.png" alt="">
+                        <p class="description">
+                            Even&Odd
+                        </p>
+                        <p class="price">
+                            $145.99
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="box best-sellers">
+            <div class="wrapper">
+                <div class="group-name">
+                    <h3 class="name">
+                        Best sellers of the month
+                    </h3>
+                    <a class="btn show-all" href="#">Show All</a>
+                </div>
+                <div class="items">
+                    <div class="item">
+                        <img src="/img/new-arrivals/shoe.png" alt="">
+                        <p class="description">
+                            Even&Odd
+                        </p>
+                        <p class="price">
+                            $145.99
+                        </p>
+                    </div>
+                    <div class="item">
+                        <img src="/img/new-arrivals/shoe.png" alt="">
+                        <p class="description">
+                            Even&Odd
+                        </p>
+                        <p class="price">
+                            $145.99
+                        </p>
+                    </div>
+                    <div class="item">
+                        <img src="/img/new-arrivals/shoe.png" alt="">
+                        <p class="description">
+                            Even&Odd
+                        </p>
+                        <p class="price">
+                            $145.99
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Info -->
+        <section class="information">
+            <div class="wrapper">
+                <div class="testimonials info-box">
+                    <h4 class="title">TESTIMONIALS</h4>
+                    <p class="description">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae nostrum possimus ullam ratione
+                        maiores est?
+                    </p>
+                    <span class="person">- John Doe -</span>
+                </div>
+                <div class="blog-news info-box">
+                    <h4 class="title">BLOG NEWS</h4>
+                    <div class="news news1">
+                        <span class="news-date"></span>
+                        <div class="news-text">
+                           <span class="news-name"></span> 
+                           <p class="news-info"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="twitter-vg info-box">
+                    <h4 class="title"></h4>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="social">
+            <div class="wrapper">
+                <div class="text-widget">
+                    <h3 class="widget-name">TEXT WIDGET</h3>
+                    <p class="widget-info">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga voluptate sunt harum, quam aut
+                        laudantium assumenda, soluta maxime pariatur odio aperiam delectus. Expedita eum doloribus autem
+                        perferendis placeat quibusdam pariatur.
+                    </p>
+                </div>
+                <div class="flickr-widget">
+                    <h3 class="widget-name">
+                        FLICKR WIDGET
+                    </h3>
+                    <div class="widget-box">
+                        <style type="text/css">
+                            .flickr_badge_image {
+                                margin: 0px;
+                                display: inline;
+                            }
+
+                            .flickr_badge_image img {
+                                width: 68px;
+                                height: auto;
+                                padding: 1px;
+                                margin: 2px;
+                            }
+
+                            #flickr_badge_wrapper {
+                                width: 224px;
+                                /* text-align: left; */
+                            }
+                        </style>
+                        <div id="flickr_badge_wrapper">
+                            <script type="text/javascript"
+                                src="https://www.flickr.com/badge_code_v2.gne?count=6&display=random&size=s&layout=x&source=user&user=66485833@N07"></script>
+                            <center><small></small></center>
+                        </div>
+                    </div>
+                </div>
+                <div class="email">
+                    <form action="#">
+                        <div class="input-container">
+                            <input type="text" name="emailaddress" placeholder="Enter email for newsletter">
+
+                            <a href="#"><i class="fas fa-angle-right "></i></a>
+                        </div>
+                    </form>
+                </div>
+                <ul class="social-buttons">
+                    <li class="social-btn">
+                        <a href="#">
+                                <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li class="social-btn">
+                        <a href="#">
+                                <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li class="social-btn">
+                        <a href="#">
+                                <i class="fab fa-google-plus-g"></i>
+                        </a>
+                    </li>
+                    <li class="social-btn">
+                        <a href="#">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </li>
+                    <li class="social-btn">
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="19.21" height="7.82">
+                                <path data-name="Flickr copy"
+                                    d="M7.98 3.91A4 4 0 1 1 3.99.01a3.95 3.95 0 0 1 3.99 3.9zm11.22 0a4 4 0 1 1-4-3.9 3.96 3.96 0 0 1 4 3.9z"
+                                    fill="#7d7d7d" fill-rule="evenodd" /></svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="wrapper">
+            <p class="copyright">
+                Copyright &copy; Fooseshoes 2013.<br> Designed by EnzoLiVolti.
+            </p>
+            <ul class="footer-menu">
+                <li><a href="#">Home /</a></li>
+                <li><a href="#"> Support /</a></li>
+                <li><a href="#"> Terms and Conditions /</a></li>
+                <li><a href="#"> Faqs /</a></li>
+                <li><a href="#"> Contact us</a></li>
+            </ul>
+        </div>
+    </footer>
+
+
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
