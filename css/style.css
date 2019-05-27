@@ -177,7 +177,8 @@ body {
   background-color: #242424; }
   .specials .specials-all {
     padding: 20px 0;
-    display: flex; }
+    display: flex;
+    justify-content: center; }
   .specials .spec {
     flex: 1;
     max-width: 300px;
