@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="main-header">
+            <div class="wrapper">
+                <h1 class="name"><a href="/index.html">FOOSHOES</a></h1>
+                <!-- <div class="search-box-black">
+                    <input type="text" name="" class="search-txt" placeholder="Type to search" />
+                    <a class="search-btn" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56.97 56.97" width="15px" height="auto"
+                            fill="#7e7e7e">
+                            <path
+                                d="M55.15 51.89l-13.56-14.1A22.93 22.93 0 0 0 46.99 23c0-12.68-10.32-23-23-23s-23 10.32-23 23 10.31 23 23 23c4.76 0 9.3-1.44 13.17-4.16l13.66 14.2a2.98 2.98 0 0 0 4.24.09 3 3 0 0 0 .09-4.24zM23.98 6c9.38 0 17 7.63 17 17s-7.62 17-17 17-17-7.63-17-17 7.63-17 17-17z" />
+                        </svg>
+                    </a>
+
+                </div> -->
+                <p class="login">LOGIN or REGISTER</p>
+            </div>
+        </div>
+        <div class="second-header">
+            <div class="wrapper">
+                <div class="menu">
+                    <a href="javascript:void(0);" class="menu-btn" onclick="myFunction()">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="15px" height="auto"
+                            fill="#7e7e7e">
+                            <path
+                                d="M491.32 235.32H20.68a20.68 20.68 0 1 0 0 41.36h470.64a20.68 20.68 0 1 0 0-41.36zM491.32 78.44H20.68a20.68 20.68 0 0 0 0 41.36h470.64a20.68 20.68 0 1 0 0-41.36zM491.32 392.2H20.68a20.68 20.68 0 1 0 0 41.36h470.64a20.68 20.68 0 1 0 0-41.36z" />
+                        </svg>
+                    </a>
+                    <ul class="top-nav" id="myTopnav">
+                        <li><a href="/index.html">Home</a></li>
+                        <li><a href="#">Products</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Pages</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="search-box" id="white">
+
+                    <input type="text" name="" class="search-txt" placeholder="Type to search" />
+                    <a class="search-btn" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56.97 56.97" width="15px" height="auto"
+                            fill="#7e7e7e">
+                            <path
+                                d="M55.15 51.89l-13.56-14.1A22.93 22.93 0 0 0 46.99 23c0-12.68-10.32-23-23-23s-23 10.32-23 23 10.31 23 23 23c4.76 0 9.3-1.44 13.17-4.16l13.66 14.2a2.98 2.98 0 0 0 4.24.09 3 3 0 0 0 .09-4.24zM23.98 6c9.38 0 17 7.63 17 17s-7.62 17-17 17-17-7.63-17-17 7.63-17 17-17z" />
+                        </svg>
+                    </a>
+
+                </div>
+                <div class="favorites">
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 490.73 490.73" width="15px" height="auto"
+                            fill="#7e7e7e">
+                            <path
+                                d="M453.44 160.21l-119.7-8.6c-2.5-.2-4.7-1.7-5.6-4.1l-45.6-111c-6.3-15.3-20.5-24.8-37.1-24.8s-30.7 9.5-37.1 24.9l-45.7 111.1a6.7 6.7 0 0 1-5.6 4.1l-119.5 8.6c-16.2.9-30 11.5-35.3 27.1-5.4 15.8-.9 32.4 11.9 43.3l92.5 76.4c1.9 1.6 2.8 4.2 2.2 6.6l-28.2 115.4c-3.3 12-1 24.4 6.3 34.1 7.5 9.8 19.2 15.7 31.5 15.7a38 38 0 0 0 21.1-6.4l101.1-62.9a6.6 6.6 0 0 1 6.9 0l102.1 62.7c6.4 4.3 13.8 6.6 21.3 6.6 11.5 0 22.9-5.5 30.3-14.8 7.7-9.6 10.5-22.1 7.7-34.6l-28.3-115.7c-.6-2.5.3-5.1 2.2-6.7l93.9-76.6c12.6-10.8 17.1-27.4 11.8-43.2-5.2-15.6-19.1-26.3-35.1-27.2zm7.7 51.5l-93.7 76.5a31.16 31.16 0 0 0-10.5 31.5l28.3 115.5c1.5 6.8-1.2 11.5-3 13.7-2.8 3.5-7 5.7-11.2 5.7-2.6 0-5.2-.8-8-2.7l-102.5-63a31.12 31.12 0 0 0-32.7.1l-101.5 63.1c-6.5 4.3-15.2 2.4-19.8-3.6-1.9-2.5-3.9-6.8-2.1-13.1l28.3-115.8c2.8-11.5-1.3-23.8-10.4-31.3l-92.3-76.3c-7.3-6.3-5.3-14.4-4.5-16.7s4.1-10 13.7-10.5l119.7-8.6c11.8-.9 22-8.2 26.5-19.2l45.7-111.1c3.7-9 12-9.7 14.4-9.7 2.4 0 10.7.7 14.4 9.7l45.7 111.1c4.5 11 14.7 18.3 26.5 19.2l119.9 8.7c9.4.5 12.7 8.2 13.5 10.5.6 2.1 2.6 10.2-4.4 16.3z" />
+                        </svg>
+                        <span class="count">30</span>
+                    </a>
+                </div>
+                <div class="cart">
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 459.53 459.53" width="15px" height="auto"
+                            fill="#7e7e7e">
+                            <path
+                                d="M17 55.23h48.73l69.42 251.03a17 17 0 0 0 16.43 12.47h213.35c6.8 0 12.75-3.97 15.59-10.2l77.63-178.5a17.2 17.2 0 0 0-1.42-16.15 16.88 16.88 0 0 0-14.16-7.65H206.83c-9.35 0-17 7.65-17 17s7.65 17 17 17H416.5l-62.9 144.5H164.33L94.92 33.7a17 17 0 0 0-16.44-12.47H17c-9.35 0-17 7.65-17 17s7.65 17 17 17zM135.43 438.3c21.25 0 38.54-17.29 38.54-38.54s-17.29-38.53-38.54-38.53-38.53 17.28-38.53 38.53 17.28 38.54 38.53 38.54zm240.84 0h2.83a38.46 38.46 0 0 0 26.35-13.32c6.8-7.65 9.92-17.57 9.35-28.05-1.42-20.97-19.83-37.12-41.08-35.7-21.25 1.42-37.12 20.12-35.7 41.08 1.41 20.12 18.13 35.99 38.25 35.99z" />
+                        </svg>
+                        <span class="count">0</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </header>
+    <section class="login-form">
+        <div class="form-container sign-up-container">
+            <form action="#">
+                <h1 class="form-title">CREATE ACCOUNT</h1>
+                <p class="form-name">Name
+                </p>
+                <input type="text" />
+                <p class="form-name">E-MAIL</p>
+                <input type="email" />
+                <p class="form-name">PASSWORD</p>
+                <div class="password-field">
+                    <input type="password" />
+                    <i toggle="#password-field" class="fas fa-eye field-icon toggle-password"></i>
+                </div>
+                <button>SIGN UP</button>
+                <span class="use-acc"><a href="#">Or use your account</a></span>
+
+            </form>
+        </div>
+        <div class="form-container sign-in-container">
+            <form action="#">
+                <h1 class="form-title">SIGN IN</h1>
+                <p class="form-name">E-MAIL</p>
+                <input type="email" />
+                <div class="form-password">
+                    <p class="form-name">PASSWORD</p>
+                    <p class="form-forgot"><a href="#">forgot password</a></p>
+                </div>
+                <div class="password-field">
+                    <input type="password" id="password-field" />
+                    <i toggle="#password-field" class="fas fa-eye field-icon toggle-password"></i>
+                </div>
+                <button>LOG IN</button>
+                <span class="create-acc"><a href="#">I don't have an account</a></span>
+            </form>
+        </div>
+
+
+    </section>
+    <main class="products-page">
+        <div class="slider-container">
+            <div class="wrapper">
+
+                <div class="shoe-collection">
+                    <div class="price">
+                        $145.99
+                    </div>
+                    <h2 class="name-collection">
+                        Pink Shoes 2013 Collection
+                    </h2>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo consectetur aliquam sint
+                        earum alias!
+                    </p>
+
+                </div>
+            </div>
+        </div>
+
+        <section class="select-section">
+            <div class="wrapper-select">
+                <div class="shop-by">
+                    <h2 class="title">
+                        Shop by
+                    </h2>
+                </div>
+                <div class="select-style select-brand">
+
+                    <select>
+                        <option value="Brands">Brands</option>
+                        <option value="Prada">Prada</option>
+                        <option value="Anna">Anna</option>
+                        <option value="D&G">D&G</option>
+                    </select>
+                    <i class="fas fa-arrow-circle-down"></i>
+                </div>
+                <div class="select-style select-categories">
+                    <select>
+                        <option value="Categories">Categories</option>
+                        <option value="Categories">Categories</option>
+                        <option value="Categories">Categories</option>
+                        <option value="Categories">Categories</option>
+                    </select>
+                    <i class="fas fa-arrow-circle-down"></i>
+                </div>
+                <div class="select-style select-price">
+                    <select>
+                        <option value="Price">Price</option>
+                        <option value="Low">Low</option>
+                        <option value="High">High</option>
+                    </select>
+                    <i class="fas fa-arrow-circle-down"></i>
+                </div>
+            </div>
+        </section>
+        <section class="new-arrivals main-page-products box">
+            <div class="wrapper">
+                <div class="group-name">
+                    <h3 class="name">
+                        All Products
+                    </h3>
+                    <a class="btn show-all" href="#">Show All</a>
+                </div>
+                <div class="items all-products">
+                    <div class="item">
+                        <img src="/img/new-arrivals/shoe.png" alt="">
+                        <p class="description">
+                            Even&Odd
+                        </p>
+                        <p class="price">
+                            $145.99
+                        </p>
+                    </div>
+                    <div class="item">
+                        <img src="/img/new-arrivals/shoe.png" alt="">
+                        <p class="description">
+                            Even&Odd
+                        </p>
+                        <p class="price">
+                            $145.99
+                        </p>
+                    </div>
+                    <div class="item">
+                        <img src="/img/new-arrivals/shoe.png" alt="">
+                        <p class="description">
+                            Even&Odd
+                        </p>
+                        <p class="price">
+                            $145.99
+                        </p>
+                    </div>
+                    <div class="item">
+                        <img src="/img/new-arrivals/shoe.png" alt="">
+                        <p class="description">
+                            Even&Odd
+                        </p>
+                        <p class="price">
+                            $145.99
+                        </p>
+                    </div>
+                    <div class="item">
+                        <img src="/img/new-arrivals/shoe.png" alt="">
+                        <p class="description">
+                            Even&Odd
+                        </p>
+                        <p class="price">
+                            $145.99
+                        </p>
+                    </div>
+                    <div class="item">
+                        <img src="/img/new-arrivals/shoe.png" alt="">
+                        <p class="description">
+                            Even&Odd
+                        </p>
+                        <p class="price">
+                            $145.99
+                        </p>
+                    </div>
+                    <div class="item">
+                        <img src="/img/new-arrivals/shoe.png" alt="">
+                        <p class="description">
+                            Even&Odd
+                        </p>
+                        <p class="price">
+                            $145.99
+                        </p>
+                    </div>
+                    <div class="item">
+                        <img src="/img/new-arrivals/shoe.png" alt="">
+                        <p class="description">
+                            Even&Odd
+                        </p>
+                        <p class="price">
+                            $145.99
+                        </p>
+                    </div>
+                    <div class="item">
+                        <img src="/img/new-arrivals/shoe.png" alt="">
+                        <p class="description">
+                            Even&Odd
+                        </p>
+                        <p class="price">
+                            $145.99
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="information">
+            <div class="wrapper">
+                <div class="free-shipping info-box">
+                    <h4 class="title">FREE SHIPPING</h4>
+                    <p class="description">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique quod delectus laudantium
+                        saepe officia, expedita aliquid quaerat aspernatur!
+                    </p>
+                </div>
+                <div class="testimonials info-box">
+                    <h4 class="title">TESTIMONIALS</h4>
+                    <p class="description">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae nostrum possimus ullam ratione
+                        maiores est?
+                    </p>
+                    <span class="person">- John Doe -</span>
+                </div>
+                <div class="blog-news info-box">
+                    <h4 class="title">BLOG NEWS</h4>
+                    <div class="text-slider">
+                        <!-- <div class="news">
+                            <span class="news-date">ffff</span>
+                            <div class="news-text">
+                                <span class="news-name">fff</span>
+                                <p class="news-info">fff</p>
+                            </div>
+                        </div>
+                        <div class="news">
+                            <span class="news-date">ffff</span>
+                            <div class="news-text">
+                                <span class="news-name">fff</span>
+                                <p class="news-info">fff</p>
+                            </div>
+                        </div>
+                        <div class="news">
+                            <span class="news-date">ffff</span>
+                            <div class="news-text">
+                                <span class="news-name">fff</span>
+                                <p class="news-info">fff</p>
+                            </div>
+                        </div>
+                        <div class="news">
+                            <span class="news-date">ffff</span>
+                            <div class="news-text">
+                                <span class="news-name">fff</span>
+                                <p class="news-info">fff</p>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <section class="social">
+            <div class="wrapper">
+                <div class="social-box">
+                    <div class="text-widget">
+                        <h3 class="widget-name">TEXT WIDGET</h3>
+                        <p class="widget-info">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga voluptate sunt harum, quam
+                            aut
+                            laudantium assumenda, soluta maxime pariatur odio aperiam delectus. Expedita eum doloribus
+                            autem
+                            perferendis placeat quibusdam pariatur.
+                        </p>
+                    </div>
+                    <div class="twitter-vg">
+                        <h3 class="title">
+                            </h4>
+                    </div>
+                    <div class="flickr-widget">
+                        <h3 class="widget-name">
+                            FLICKR WIDGET
+                        </h3>
+                        <div class="popup-gallery">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="social-box">
+                    <div class="email">
+                        <form action="#">
+                            <div class="input-container">
+                                <input type="text" name="emailaddress" placeholder="Enter email for newsletter">
+
+                                <a href="#"><i class="fas fa-angle-right "></i></a>
+                            </div>
+                        </form>
+                    </div>
+                    <ul class="social-buttons">
+                        <li class="social-btn">
+                            <a href="#">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li class="social-btn">
+                            <a href="#">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li class="social-btn">
+                            <a href="#">
+                                <i class="fab fa-google-plus-g"></i>
+                            </a>
+                        </li>
+                        <li class="social-btn">
+                            <a href="#">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </li>
+                        <li class="social-btn">
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="19.21" height="7.82">
+                                    <path data-name="Flickr copy"
+                                        d="M7.98 3.91A4 4 0 1 1 3.99.01a3.95 3.95 0 0 1 3.99 3.9zm11.22 0a4 4 0 1 1-4-3.9 3.96 3.96 0 0 1 4 3.9z"
+                                        fill="#7d7d7d" fill-rule="evenodd" /></svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="wrapper">
+            <p class="copyright">
+                Copyright &copy; Fooseshoes 2013.<br> Designed by EnzoLiVolti.
+            </p>
+            <ul class="footer-menu">
+                <li><a href="#">Home /</a></li>
+                <li><a href="#"> Support /</a></li>
+                <li><a href="#"> Terms and Conditions /</a></li>
+                <li><a href="#"> Faqs /</a></li>
+                <li><a href="#"> Contact us</a></li>
+            </ul>
+        </div>
+    </footer>
+
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+
+
+</body>
+
+</html>
