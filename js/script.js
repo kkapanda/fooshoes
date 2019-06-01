@@ -91,6 +91,7 @@ function myFunction() {
 
 
 
+
 //Slider
 
 $('.slick-frame').on('init', function () {
@@ -267,14 +268,19 @@ $(document).ready(function () {
 
 
 
-// if (window.matchMedia("(min-width: 768px)").matches) {
-//   var login = document.querySelector('.login');
-//   var mainHeader = document.querySelector('.main-header');
-//   var wrapper = mainHeader.querySelector('.wrapper');
-//   wrapper.insertBefore(searchBox, login)
-// } else {
 
-// }
+  var itemRow = document.querySelector('.item-row');
+  var itemCol = document.querySelector('.item-column');
+  // var productPage = document.querySelector('.products-page')
+  var items = document.querySelector('.all-products');
+  
+  itemCol.addEventListener('click', function() {
+    items.style.flexDirection = 'column';
+  })
+  
+  itemRow.addEventListener('click', function(){
+    items.style.flexDirection = 'row';
+  })
 
 
 

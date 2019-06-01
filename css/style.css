@@ -35,7 +35,8 @@ input:focus:-ms-input-placeholder {
 body {
   font-family: "Aller Light";
   font-style: normal;
-  font-weight: 300; }
+  font-weight: 300;
+  overflow-x: hidden; }
 
 .wrapper {
   width: 70%;
@@ -163,6 +164,10 @@ a:hover {
   text-align: center;
   border-right: 1px solid #cccccc; }
 
+.second-header .menu {
+  border-right: 0;
+  border-left: 1px solid #cccccc; }
+
 .second-header .search-box {
   border-left: 1px solid #cccccc; }
 
@@ -213,20 +218,22 @@ a:hover {
 
 .second-header .search-box {
   display: flex;
-  justify-content: center;
-  position: relative; }
+  justify-content: center; }
 
 .second-header #result {
   position: absolute;
   top: 100%;
   width: 100%;
-  max-width: 500px;
   cursor: pointer;
   overflow-y: auto;
-  max-height: 400px;
+  max-height: 300px;
   box-sizing: border-box;
   z-index: 1001;
   background-color: #fff; }
+  .second-header #result::-webkit-scrollbar {
+    width: 0; }
+  .second-header #result li:hover {
+    background-color: #ebe7df; }
 
 .second-header .search-btn {
   border-radius: 50%;
@@ -301,7 +308,7 @@ a:hover {
   padding: 0;
   padding: 10px 0; }
   .slick-dots li {
-    width: 90px;
+    width: 150px;
     display: inline-block; }
     .slick-dots li:last-child {
       display: none; }
@@ -399,7 +406,8 @@ a:hover {
     margin: 0;
     padding: 10px 10px 10px 80px;
     font-weight: bold;
-    border-top: 1px solid #bcb5a7; }
+    border-top: 1px solid #bcb5a7;
+    position: relative; }
   .item .price {
     position: absolute;
     z-index: 1;
@@ -407,6 +415,12 @@ a:hover {
     margin: 0;
     left: 10px;
     font-size: 0.8em; }
+  .item .on-sale {
+    display: none; }
+  .item .icons-shop {
+    display: none; }
+  .item .out-of-stock {
+    display: none; }
 
 .products-page .box {
   display: block; }
@@ -414,6 +428,41 @@ a:hover {
 .products-page .main-page-products .items {
   display: flex;
   flex-direction: column; }
+
+.products-page h3 {
+  margin: auto 0; }
+
+.products-page .group-name ul {
+  display: none;
+  align-self: flex-start;
+  padding: 2px 15px;
+  margin-right: auto; }
+  .products-page .group-name ul li {
+    display: inline-block;
+    font-size: 0.9em;
+    text-align: right;
+    font-weight: bold;
+    margin-top: 4px; }
+    .products-page .group-name ul li a {
+      color: #bcb5a7; }
+
+.products-page .group-name {
+  padding: 30px 0 20px;
+  vertical-align: center; }
+  .products-page .group-name .grid-icons {
+    display: none;
+    margin-left: auto;
+    color: #bcb5a7;
+    padding: 2px 15px; }
+    .products-page .group-name .grid-icons i {
+      padding: 5px;
+      border: 1px solid #bcb5a7;
+      cursor: pointer; }
+
+.products-page .sort {
+  font-size: 0.9em; }
+  .products-page .sort i {
+    padding-left: 10px; }
 
 .information {
   background-color: #ebe7df;
@@ -496,7 +545,8 @@ a:hover {
       font-style: italic;
       font-family: "Aller Light";
       font-weight: bold;
-      width: 220px; }
+      width: 220px;
+      outline: none; }
     .social .email a {
       background-color: #7e7e7e;
       border: none;
@@ -524,8 +574,12 @@ a:hover {
         height: 35px;
         vertical-align: middle;
         color: #7e7e7e; }
+      .social .social-buttons .social-btn svg {
+        fill: #7e7e7e; }
     .social .social-buttons .social-btn:hover i {
       color: #57c5a0; }
+    .social .social-buttons .social-btn svg:hover {
+      fill: #57c5a0; }
 
 footer {
   background-color: #2e2e2e;
@@ -543,6 +597,8 @@ footer {
       display: inline-block; }
     footer .footer-menu a {
       color: #7e7e7e; }
+      footer .footer-menu a:hover {
+        color: #57c5a0; }
   footer .copyright {
     order: 1;
     padding: 15px 0; }
@@ -614,29 +670,6 @@ footer {
     background-repeat: no-repeat, repeat; }
   .second-header .search-box .serach-box {
     padding: 10px; }
-  .main-header {
-    position: relative; }
-    .main-header .wrapper .name {
-      flex: 2;
-      font-size: 1.5em; }
-    .main-header .wrapper .login {
-      font-size: 0.8em;
-      padding-left: 30px; }
-    .main-header .wrapper #result {
-      position: absolute;
-      top: 100%;
-      width: 100%;
-      max-width: 230px;
-      cursor: pointer;
-      overflow-y: auto;
-      max-height: 400px;
-      box-sizing: border-box;
-      z-index: 1001;
-      background-color: #000;
-      color: #7e7e7e; }
-      .main-header .wrapper #result li {
-        background-color: #000;
-        border-color: #2e2e2e; }
   .slider-container .shoe-collection {
     width: 50%;
     margin-left: 50%;
@@ -674,6 +707,8 @@ footer {
     flex-grow: 5; }
   .second-header .menu .menu-btn {
     display: none; }
+  .second-header .menu {
+    border-left: none; }
   .second-header a {
     height: 60px; }
   .second-header .menu .top-nav {
@@ -773,7 +808,9 @@ footer {
   .slick-dots li {
     width: 140px; }
   .social .social-buttons {
-    margin: 0; } }
+    margin: 0; }
+  .products-page .group-name .grid-icons {
+    display: block; } }
 
 @media (min-width: 960px) {
   .wrapper {
@@ -786,6 +823,45 @@ footer {
   .all-products .item {
     flex-grow: 1;
     flex: 1 1 30%; }
+  .items .on-sale {
+    display: block;
+    font-size: 0.8em;
+    font-weight: bold;
+    position: absolute;
+    background-color: #000;
+    color: #fff;
+    padding: 27px 10px;
+    right: 10px;
+    margin: 0; }
+  .items .out-of-stock {
+    text-align: center;
+    display: block;
+    font-size: 0.8em;
+    font-weight: bold;
+    position: absolute;
+    background-color: #f27e4b;
+    color: #fff;
+    padding: 20px 12px;
+    right: 10px;
+    margin: 0; }
+  .item .icons-shop {
+    background-color: #fff;
+    display: flex;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    left: 0;
+    text-align: center;
+    padding-left: 65px;
+    justify-content: space-evenly; }
+    .item .icons-shop li {
+      display: none;
+      list-style: none;
+      background-color: #fff;
+      padding: 9px 3%; }
+  .description:hover li {
+    display: inline-block;
+    vertical-align: center; }
   .select-section .shop-by {
     flex: 2; }
   .select-section .title {
@@ -802,4 +878,11 @@ footer {
       background-repeat: no-repeat;
       background-position: top left; }
   .slick-dots li {
-    width: 250px; } }
+    width: 250px; }
+  .products-page .group-name ul {
+    display: block; }
+  .select-section .select-style select {
+    width: 200px; }
+  .select-section .select-style {
+    width: auto;
+    padding: 10px; } }

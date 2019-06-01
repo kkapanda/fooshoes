@@ -58,6 +58,7 @@ body {
     font-family: $main-font;
     font-style: normal;
     font-weight: 300;
+    overflow-x: hidden;
 }
 
 .wrapper {
@@ -90,8 +91,10 @@ a:hover {
     width: 100vw;
     height: 100vh;
 
+
     .sign-up-container {
         display: none;
+
     }
 
     form {
@@ -262,6 +265,10 @@ a:hover {
 
     }
 
+    .menu {
+        border-right: 0;
+        border-left: 1px solid #cccccc;
+    }
 
     .search-box {
         border-left: 1px solid #cccccc;
@@ -338,20 +345,27 @@ a:hover {
     .search-box {
         display: flex;
         justify-content: center;
-        position: relative;
+        // position: relative;
     }
 
     #result {
         position: absolute;
         top: 100%;
         width: 100%;
-        max-width: 500px;
         cursor: pointer;
         overflow-y: auto;
-        max-height: 400px;
+        max-height: 300px;
         box-sizing: border-box;
         z-index: 1001;
         background-color: #fff;
+
+        &::-webkit-scrollbar {
+            width: 0;
+        }
+
+        li:hover {
+            background-color: #ebe7df;
+        }
     }
 
     .search-btn {
@@ -459,7 +473,7 @@ a:hover {
 
 
     li {
-        width: 90px;
+        width: 150px;
         display: inline-block;
 
         &:last-child {
@@ -513,8 +527,6 @@ a:hover {
 
 }
 
-
-//Slider scroll
 
 
 //Specials
@@ -626,6 +638,7 @@ a:hover {
         padding: 10px 10px 10px 80px;
         font-weight: bold;
         border-top: 1px solid $btn-color;
+        position: relative;
     }
 
 
@@ -638,6 +651,19 @@ a:hover {
         left: 10px;
         font-size: 0.8em;
     }
+
+
+    .on-sale {
+        display: none;
+    }
+
+    .icons-shop {
+        display: none;
+    }
+
+    .out-of-stock {
+        display: none;
+    }
 }
 
 .products-page {
@@ -649,6 +675,61 @@ a:hover {
     .main-page-products .items {
         display: flex;
         flex-direction: column;
+    }
+
+
+    h3 {
+        margin: auto 0;
+    }
+
+    .group-name ul {
+        display: none;
+        align-self: flex-start;
+        padding: 2px 15px;
+        margin-right: auto;
+
+
+        li {
+            display: inline-block;
+            font-size: 0.9em;
+            text-align: right;
+            font-weight: bold;
+            margin-top: 4px;
+
+            a {
+                color: $btn-color;
+            }
+        }
+
+    }
+
+    .group-name {
+        padding: 30px 0 20px;
+        vertical-align: center;
+
+        .grid-icons {
+            display: none;
+            margin-left: auto;
+            color: $btn-color;
+            padding: 2px 15px;
+
+            i {
+                padding: 5px;
+                border: 1px solid $btn-color;
+                cursor: pointer;
+            }
+        }
+    }
+
+
+
+
+    .sort {
+        font-size: 0.9em;
+
+        i {
+            padding-left: 10px;
+        }
     }
 }
 
@@ -710,13 +791,6 @@ a:hover {
     display: flex;
     flex-direction: column;
 
-    // .text-widget,
-    // .twitter-vg,
-    // .flickr-widget,
-    // .social-buttons,
-    // .email {
-    //     flex: 1 1 33%;
-    // }
 
 
     .social-box {
@@ -794,6 +868,7 @@ a:hover {
             font-family: $main-font;
             font-weight: bold;
             width: 220px;
+            outline: none;
         }
 
         a {
@@ -838,13 +913,19 @@ a:hover {
             }
 
 
-
+            svg {
+                fill: #7e7e7e;
+            }
 
 
         }
 
         .social-btn:hover i {
             color: $primary-color;
+        }
+
+        .social-btn svg:hover {
+            fill: $primary-color;
         }
 
     }
@@ -880,7 +961,11 @@ footer {
         a {
             color: #7e7e7e;
 
+            &:hover {
+                color: $primary-color;
+            }
         }
+
     }
 
 
@@ -990,42 +1075,6 @@ footer {
         padding: 10px;
     }
 
-    .main-header {
-        position: relative;
-
-        .wrapper {
-            .name {
-                flex: 2;
-                font-size: 1.5em;
-            }
-
-            .login {
-                font-size: 0.8em;
-                padding-left: 30px;
-            }
-
-            #result {
-                position: absolute;
-                top: 100%;
-                width: 100%;
-                max-width: 230px;
-                cursor: pointer;
-                overflow-y: auto;
-                max-height: 400px;
-                box-sizing: border-box;
-                z-index: 1001;
-                background-color: #000;
-                color: $secondary-color;
-
-                li {
-                    background-color: #000;
-                    border-color: #2e2e2e;
-                }
-            }
-
-        }
-
-    }
 
 
     .slider-container .shoe-collection {
@@ -1053,6 +1102,8 @@ footer {
             flex: 1 1 20%;
             margin: 1%;
         }
+
+
     }
 
     .social .wrapper {
@@ -1094,6 +1145,10 @@ footer {
         .menu .menu-btn {
             display: none;
 
+        }
+
+        .menu {
+            border-left: none;
         }
 
         a {
@@ -1263,6 +1318,11 @@ footer {
         margin: 0;
     }
 
+
+    .products-page .group-name .grid-icons {
+        display: block;
+    }
+
 }
 
 @media (min-width: 960px) {
@@ -1286,6 +1346,58 @@ footer {
         flex-grow: 1;
         flex: 1 1 30%;
     }
+
+
+    .items .on-sale {
+        display: block;
+        font-size: 0.8em;
+        font-weight: bold;
+        position: absolute;
+        background-color: #000;
+        color: #fff;
+        padding: 27px 10px;
+        right: 10px;
+        margin: 0;
+    }
+
+    .items .out-of-stock {
+        text-align: center;
+        display: block;
+        font-size: 0.8em;
+        font-weight: bold;
+        position: absolute;
+        background-color: #f27e4b;
+        color: #fff;
+        padding: 20px 12px;
+        right: 10px;
+        margin: 0;
+    }
+
+    .item .icons-shop {
+        background-color: #fff;
+        display: flex;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        left: 0;
+        text-align: center;
+        padding-left: 65px;
+        justify-content: space-evenly;
+
+
+        li {
+            display: none;
+            list-style: none;
+            background-color: #fff;
+            padding: 9px 3%;
+        }
+    }
+
+    .description:hover li {
+        display: inline-block;
+        vertical-align: center;
+    }
+
 
     .select-section .shop-by {
         flex: 2;
@@ -1317,4 +1429,18 @@ footer {
         width: 250px;
     }
 
+
+    .products-page .group-name ul {
+        display: block;
+    }
+
+    .select-section .select-style select {
+        width: 200px;
+
+    }
+
+    .select-section .select-style {
+        width: auto;
+        padding: 10px;
+    }
 }
